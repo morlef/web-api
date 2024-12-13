@@ -15,7 +15,7 @@ fun Application.configureAuth() {
             realm = "si.f5.luna3419.api"
             verifier(
                 JWT.require(Algorithm.HMAC256(properties.getProperty("secret")))
-                    .withAudience("65c7e80c-db8f-4406-9400-ae9ff9a58002").withIssuer("https://jpcraft.life").build()
+                    .withAudience("dummy").withIssuer("https://luna3419.f5.si").build()
             )
 
             validate {
